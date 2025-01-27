@@ -32,12 +32,12 @@ while x<200:
     q= x*10
     o = str(q)
     print(y,"R" + o)
-    sql = 'DELETE DS_Rates INSERT INTO DS_Rates (Currency,Quantity,Rate, Date) VALUES ({}, {}, {}, GETDATE())'.format(x,y,q)
-    conn = pyodbc.connect('Driver={SQL Server};'
-                      'Server=Theebonewsql;'
-                      'Database=SysproCompanyT;'
-                      'Trusted_Connection=yes;')
-    cursor = conn.cursor()
-    cursor.execute(sql)
-    conn.commit()
+    # sql = 'DELETE DS_Rates INSERT INTO DS_Rates (Currency,Quantity,Rate, Date) VALUES ({}, {}, {}, GETDATE())'.format(x,y,q)
+    # conn = pyodbc.connect('Driver={SQL Server};'
+    #                   'Server=Theebonewsql;'
+    #                   'Database=SysproCompanyT;'
+    #                   'Trusted_Connection=yes;')
+    # cursor = conn.cursor()
+    # cursor.execute(sql)
+    # conn.commit()
     time.sleep(random.randint(60, 120))
